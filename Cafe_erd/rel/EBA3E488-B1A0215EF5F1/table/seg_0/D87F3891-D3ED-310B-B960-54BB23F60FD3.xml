@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D87F3891-D3ED-310B-B960-54BB23F60FD3" name="제품">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:30:43 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<ordsAlias>table_2</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="제품번호" id="FEA1A25A-8D0F-D84A-C09D-485E3982AE13">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:32:08 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="제품명" id="FD06D7CE-0A8B-FE08-A197-146ADB0D8F4B">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:32:23 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="가격" id="07FD4F8E-9294-BCB6-3B64-25E3C676D60A">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:32:52 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="양" id="0DA56611-9DD7-B840-B181-0F1A11477019">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:41:34 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1998DBC-DE4C-6632-3F3D-24944D83CE2D" name="제품_PK">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:32:08 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEA1A25A-8D0F-D84A-C09D-485E3982AE13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

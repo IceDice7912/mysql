@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCCF6F3F-9054-CE47-9E47-1DA0BFFD890A" name="주문">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:38:00 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="주문번호" id="0BD25FCB-20D6-A9CE-F979-A9C9D7ECC867">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:38:52 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="구매시간" id="23752039-D046-6D05-1686-7C48A6C86EB2">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:39:20 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="결제수단" id="3BBF0990-2CC6-6E98-9355-9DC71CCBE71D">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:39:51 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="고객_고객번호" id="9F8329C6-712B-21F6-01B2-73E07E51D3B7">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:57:55 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04876206-4EE3-131F-FFCB-82B1A94CC288" referredColumn="F32930C5-7053-C125-D933-3C491E3A0618"/>
+</associations>
+</Column>
+<Column name="고객_집 주소" id="6AEE6D06-85A6-05C6-0406-BC279A211522">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:57:55 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04876206-4EE3-131F-FFCB-82B1A94CC288" referredColumn="720C0B9F-DF3C-D9FF-5CEA-46AB9DB91E6E"/>
+</associations>
+</Column>
+<Column name="제품_제품번호" id="77F6F0CE-1C22-DA90-3C00-7D50AA0389FA">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:59:02 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="87BEE7A2-7BEB-F27B-57EA-B11D60188C5C" referredColumn="FEA1A25A-8D0F-D84A-C09D-485E3982AE13"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F562EBA1-1FA1-A0D3-01D1-ADAC0D8C5517" name="주문_PK">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:38:56 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BD25FCB-20D6-A9CE-F979-A9C9D7ECC867"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A6A6DD8-78B4-8E7A-CB31-0994DBEBF31C" name="주문_고객_FK">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:57:55 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F8329C6-712B-21F6-01B2-73E07E51D3B7"/>
+<colUsage columnID="6AEE6D06-85A6-05C6-0406-BC279A211522"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FE2BE81-10E0-0C41-844D-F56A0B233F4A" name="주문_제품_FK">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:59:02 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F6F0CE-1C22-DA90-3C00-7D50AA0389FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

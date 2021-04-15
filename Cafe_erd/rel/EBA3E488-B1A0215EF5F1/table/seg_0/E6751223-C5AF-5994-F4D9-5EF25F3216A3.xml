@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6751223-C5AF-5994-F4D9-5EF25F3216A3" name="고객">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:23:59 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="고객번호" id="F32930C5-7053-C125-D933-3C491E3A0618">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:25:08 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이름" id="BF7C2020-4959-0BC2-C26D-1B98D94BA7C6">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:28:13 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="연락처" id="552FCB29-292D-63A0-D36E-199742F46FE0">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:28:45 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="이메일" id="FF37D4A7-AD32-D170-F45F-277BD76281EA">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:29:05 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="집 주소" id="720C0B9F-DF3C-D9FF-5CEA-46AB9DB91E6E">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:42:45 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT035</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBD9C8F7-471C-E7DF-612B-13584ED77B86" name="Member_PK">
+<createdBy>dice7</createdBy>
+<createdTime>2021-02-17 05:25:15 UTC</createdTime>
+<ownerDesignName>Cafe_erd</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F32930C5-7053-C125-D933-3C491E3A0618"/>
+<colUsage columnID="720C0B9F-DF3C-D9FF-5CEA-46AB9DB91E6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
